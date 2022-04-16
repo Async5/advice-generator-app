@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  color: $light-cyan;
+}
+
+h1 {
+  font-size: 0.8125rem;
+  color: $neon-green;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 800;
+
+  @media screen and (min-width: 541px) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  @media screen and (min-width: 541px) {
+    font-size: 1.75rem;
+  }
+}
+
+.hide-for-mobile {
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @media screen and (min-width: 541px) {
+    display: none;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

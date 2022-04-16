@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  color: #cee3e9;
+}
+
+h1 {
+  font-size: 0.8125rem;
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 541px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 541px) {
+  p {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #1f2632;
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+}
+
+.main .card {
+  background-color: #323a49;
+  width: calc(100% - 1rem * 2);
+  max-width: 33.75rem;
+  border-radius: 0.5625rem;
+  position: relative;
+  padding: 2.375rem 1.5rem 3.25rem 1.5rem;
+}
+
+@media screen and (min-width: 541px) {
+  .main .card {
+    padding: 2.9375rem 2.9375rem 3.8125rem 2.9375rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .card {
+    margin-top: 7.5rem;
+  }
+}
+
+.main .card__title {
+  margin-bottom: 1.375rem;
+}
+
+.main .card__advice-text {
+  margin-bottom: 1.5625rem;
+}
+
+.main .card__divider {
+  width: 100%;
+}
+
+.main .card__dice {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -2.0625rem;
+}
+
+.main .card__dice .spinner {
+  display: none;
+}
+
+.main .card__dice.active .spinner {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.main .card__dice.active img {
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .main .card__dice {
+    cursor: pointer;
+  }
+}
+
+.main .card__dice:hover {
+  -webkit-box-shadow: 0px 0px 1.375rem #52ffa8;
+          box-shadow: 0px 0px 1.375rem #52ffa8;
+}
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite;
+  stroke: #202833;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+/*# sourceMappingURL=styles.min.css.map */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main flex flex-jc-c flex-ai-c">
+      <div class="card flex flex-fd-c flex-jc-c flex-ai-c text-center">
+        <h1 class="card__title">
+          advice <span id="advice-id" class="title__id">#117</span>
+        </h1>
+        <p class="card__advice-text">
+          “
+          <span id="advice-text"
+            >It is easy to sit up and take notice, what&apos;s difficult is
+            getting up and taking action.</span
+          >”
+        </p>
+        <img
+          class="hide-for-mobile card__divider"
+          src="/app/images/pattern-divider-desktop.svg"
+          alt="divider"
+        />
+        <img
+          class="hide-for-desktop card__divider"
+          src="./app/images/pattern-divider-mobile.svg"
+          alt="divider"
+        />
+        <button id="dice" class="card__dice flex flex-jc-c flex-ai-c">
+          <img src="./app/images/icon-dice.svg" alt="dice" />
+          <svg
+            class="spinner"
+            width="65px"
+            height="65px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="path"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              cx="33"
+              cy="33"
+              r="30"
+            ></circle>
+          </svg>
+        </button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>
